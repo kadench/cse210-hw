@@ -35,10 +35,5 @@ class Program
         {
             Console.WriteLine("You have an F.");
         }
-        else
-        {
-            Console.WriteLine("You didn't enter a number.");
-        }
-
     }
 }
