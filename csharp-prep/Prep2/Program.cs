@@ -1,4 +1,5 @@
 using System;
+using System.Data.Common;
 
 class Program
 {
@@ -60,7 +61,8 @@ class Program
         }
         else if (kh_grade_value_as_int < 60)
         {
-            Console.WriteLine("You have an F.");
+            kh_grade = "F";
+            Console.WriteLine($"You have an {kh_grade}.");
         }
     }
 }
