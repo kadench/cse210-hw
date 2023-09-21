@@ -1,0 +1,130 @@
+/* Defining CSS variables for universal use */
+:root {
+    --h1-font-size: 16px;
+    --p-font-size: 14px;
+    --gray: rgba(118, 118, 118, 0.3);
+    --dark-gray: rgba(63, 63, 63, .4);
+    --light-gray: rgba(165, 165, 165, 0.286);
+
+}
+
+/* Making everything line up to the very edge of the page */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Giving header a background color */
+
+header {
+    background-color: var(--dark-gray);
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+/* h1 Style to the middle of the screen and more appealing */
+h1.main-title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    padding: .7rem;
+}
+
+
+/* Giving space on the left and right of the table header paragraphs.  */
+.table-header {
+    padding: .2rem;
+    background-color: var(--gray);
+    margin: 0 2rem 0 2rem
+}
+
+/* Aligning the table content with the rest of the table */
+
+/* Container for the two side-by-side divs */
+.table-container {
+    display: flex;
+    margin: 0 -1rem; /* Negative margin to counteract the margins for the inner divs */
+}
+
+/* Left div taking 50% of the screen width with 1rem left margin */
+.left-div {
+    flex: 1; /* Takes up 50% of the available space */
+    margin-left: 2rem; /* 1rem left margin */
+    background-color: var(--gray);
+    padding: 0;
+    text-align: center;
+}
+
+/* Right div taking 50% of the screen width with 1rem right margin */
+.right-div {
+    flex: 1; /* Takes up 50% of the available space */
+    margin-right: 2rem; /* 1rem right margin */
+    background-color: var(--gray);
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling each table cell as a table cell  */
+.table-content {
+    padding: .2rem;
+    font-size: var(--p-font-size);
+    background-color: white;
+    border: .3px solid black;
+    
+}
+
+/* Making the table title look like the table content */
+/* Container for the two side-by-side divs */
+
+.table-title-container {
+    display: flex;
+    margin: 0 1rem;
+    background-color: var(--gray);
+}
+
+/* Left div taking 50% of the screen width with 1rem left margin */
+.left-title {
+    flex: 1; /* Takes up 50% of the available space */
+    margin: 0 2rem 0 2rem; 
+    background-color: var(--vi);
+    padding: 0;
+    text-align: center;
+}
+
+/* Right div taking 50% of the screen width with 1rem right margin */
+.right-title {
+    flex: 1; /* Takes up 50% of the available space */
+    margin: 0 2rem 0 2rem; 
+    padding: 0;
+    text-align: center;
+}
+
+.table-title-text {
+    font-size: var(--p-font-size);
+    text-align: center;
+}
+
+.gray {
+    background-color: var(--light-gray);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(60, 94, 206);
+}
+
+a:visited {
+    color: purple;
+    text-decoration: double;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: 1s ease-in;
+}
+
+p.footer-p {
+    margin: .2rem 0 0 1rem;
+    font-size: var(--p-font-size);
+    color: red;
+}
