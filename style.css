@@ -1,11 +1,15 @@
+/* Initially show only elements with .invisible-p class */
+
+
 /* Defining CSS variables for universal use */
 :root {
-    --h1-font-size: 16px;
+    --h1-font-size: 18px;
+    --h3-font-size: 16px;
     --p-font-size: 14px;
     --gray: rgba(118, 118, 118, 0.3);
     --dark-gray: rgba(63, 63, 63, .4);
     --light-gray: rgba(165, 165, 165, 0.286);
-
+    
 }
 
 /* Making everything line up to the very edge of the page */
@@ -127,4 +131,35 @@ p.footer-p {
     margin: .2rem 0 0 1rem;
     font-size: var(--p-font-size);
     color: red;
+}
+
+.invisible-p, .invisible-h3 {
+    display: none;
+}
+
+/* Show .invisible-p when screen width is 350px or below */
+@media screen and (max-width: 350px) {
+    header, main, footer p.footer-p {
+        display: none;
+    }
+    
+    .invisible-h3 {
+        display: block;
+        padding-top: .5em;
+        margin: .4em;
+        font-size: var(--h3-font-size);
+        font-weight: 600;
+        color: red;
+        text-align: center;
+    }
+    
+    .invisible-p {
+        display: block;
+        margin: .9em;
+        font-size: var(--p-font-size);
+        font-weight: 500;
+        color: red;
+        text-align: center;
+    }
+    
 }
