@@ -40,7 +40,7 @@ h1.main-title {
 .table-header {
     padding: .2rem;
     background-color: var(--gray);
-    margin: 0 2rem 0 2rem
+    margin: 0 2rem 0 2rem;
 }
 
 /* Aligning the table content with the rest of the table */
@@ -62,18 +62,17 @@ h1.main-title {
 
 /* Left div taking 50% of the screen width with 1rem left margin */
 .left-title {
+    height: 100%;
     width: 50%; /* Takes up 50% of the available space */
-    margin: 0 2rem 0 2rem; 
-    background-color: var(--vi);
-    padding: 0;
+    padding: 0 2rem 0 2rem; 
     text-align: center;
 }
 
 /* Right div taking 50% of the screen width with 1rem right margin */
 .right-title {
+    height: 100%;
     width: 50%; /* Takes up 50% of the available space */
-    margin: 0 2rem 0 2rem; 
-    padding: 0;
+    padding: 0 2rem 0 2rem; 
     text-align: center;
 }
 
