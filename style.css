@@ -153,6 +153,10 @@ a:hover {
     color: rgb(170, 35, 35);
 }
 
+.pending {
+    color: rgb(10, 13, 150)
+}
+
 
 p.footer-p {
     margin: .2rem 0 0 1rem;
