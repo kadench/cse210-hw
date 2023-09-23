@@ -1,7 +1,7 @@
 using System;
 using System.Data.Common;
 
-class Program
+class Kh_program
 {
     static void Main(string[] args)
     {
