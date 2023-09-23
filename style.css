@@ -160,7 +160,7 @@ p.footer-p {
     color: rgb(0, 0, 0);
 }
 
-.invisible-p, .invisible-h3 {
+.invisible-p, .invisible-h3, .invisible-img {
     display: none;
 }
 
@@ -187,6 +187,13 @@ p.footer-p {
         font-weight: 500;
         color: red;
         text-align: center;
+    }
+
+    .invisible-img {
+        display: block;
+        width: 100px;
+        padding: auto;
+        margin: auto;
     }
     
 }
