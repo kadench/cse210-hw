@@ -129,7 +129,6 @@ a:hover {
     background-color: var(--light-gray);
 }
 
-
 /* For white background */
 .white-complete {
     color: #008000; /* Green for "Complete" on white background */
@@ -168,7 +167,7 @@ p.footer-p {
     display: none;
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 427px) {
     p.footer-p {
         margin: .2rem 0 0 1rem;
         font-size: var(--p-font-size);
