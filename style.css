@@ -113,16 +113,16 @@ h1.main-title {
 
 a:link {
     text-decoration: none;
-    color: #3c5ece;
+    color: #0077B6;
 }
 
 a:visited {
-    color: purple;
+    color: rgb(126, 126, 128);
     text-decoration: double;
 }
 
 a:hover {
-    color: #404140;
+    color: #0099E0;
     text-decoration: underline;
 }
 
@@ -145,18 +145,32 @@ a:hover {
     background-color: var(--light-gray);
 }
 
-.complete {
-    color: green;
+
+/* For white background */
+.white-complete {
+    color: #008000; /* Green for "Complete" on white background */
 }
 
-.help {
-    color: rgb(170, 35, 35);
+.white-help {
+    color: #FF3333; /* Red for "Help Needed" on white background */
 }
 
-.pending {
-    color: rgb(10, 13, 150)
+.white-in-progress {
+    color: #e09916; /* Dark gray for "In Progress" on white background */
 }
 
+/* For --light-gray background */
+.gray-complete {
+    color: #008000; /* Green for "Complete" on gray background */
+}
+
+.gray-help {
+    color: #FF3333; /* Red for "Help Needed" on gray background */
+}
+
+.gray-in-progress {
+    color: #b8712f; /* Dark gray for "In Progress" on gray background */
+}
 
 p.footer-p {
     margin: .2rem 0 0 1rem;
