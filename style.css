@@ -157,7 +157,7 @@ a:hover {
 p.footer-p {
     margin: .2rem 0 0 1rem;
     font-size: var(--p-font-size);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 .invisible-p, .invisible-h3, .invisible-img {
@@ -165,7 +165,7 @@ p.footer-p {
 }
 
 /* Show .invisible-p when screen width is 350px or below */
-@media screen and (max-width: 498px) and (max-width: 430px) {
+@media screen and (max-width: 499px) {
     header, main, footer p.footer-p {
         display: none;
     }
