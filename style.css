@@ -60,51 +60,35 @@ h1.main-title {
     background-color: var(--gray);
 }
 
-/* Left div taking 33.3% of the screen width with 1rem left margin */
+/* Left div taking 50% of the screen width with 1rem left margin */
 .left-title {
-    width: 33.3%; /* Takes up 33.3% of the available space */
+    width: 50%; /* Takes up 50% of the available space */
     margin: 0 2rem 0 2rem; 
     background-color: var(--vi);
     padding: 0;
     text-align: center;
 }
 
-/* Middle div taking 33.3% of the screen width with 1rem left margin */
-.center-title {
-    width: 33.3%; /* Takes up 33.3% of the available space */
-    margin: 0 2rem 0 2rem; 
-    background-color: var(--vi);
-    padding: 0;
-    text-align: center;
-}
-
-/* Right div taking 33.3% of the screen width with 1rem right margin */
+/* Right div taking 50% of the screen width with 1rem right margin */
 .right-title {
-    width: 33.3%; /* Takes up 33.3% of the available space */
+    width: 50%; /* Takes up 50% of the available space */
     margin: 0 2rem 0 2rem; 
     padding: 0;
     text-align: center;
 }
 
-/* Left div taking 33.3% of the screen width with 1rem left margin */
+/* Left div taking 50% of the screen width with 1rem left margin */
 .left-div {
-    width: 33.3%; /* Takes up 33.3% of the available space */
+    width: 50%; /* Takes up 50% of the available space */
     margin-left: 2rem; /* 1rem left margin */
     background-color: var(--gray);
     padding: 0;
     text-align: center;
 }
 
-.middle-div {
-    width: 33.3%; /* Takes up 33.3% of the available space */
-    background-color: var(--gray);
-    padding: 0;
-    text-align: center;
-}
-
-/* Right div taking 33.3% of the screen width with 1rem right margin */
+/* Right div taking 50% of the screen width with 1rem right margin */
 .right-div {
-    width: 33.3%; /* Takes up 33.3% of the available space */
+    width: 50%; /* Takes up 50% of the available space */
     margin-right: 2rem; /* 1rem right margin */
     background-color: var(--gray);
     padding: 0;
@@ -176,14 +160,26 @@ p.footer-p {
     margin: .2rem 0 0 1rem;
     font-size: var(--p-font-size);
     color: rgb(255, 0, 0);
+    width: calc(100% - 2rem);
+
 }
 
 .invisible-p, .invisible-h3, .invisible-img {
     display: none;
 }
 
+@media screen and (max-width: 388px) {
+    p.footer-p {
+        margin: .2rem 0 0 1rem;
+        font-size: var(--p-font-size);
+        color: rgb(255, 0, 0);
+        width: calc(100% - 2rem);
+        text-align: center;
+    }
+}
+
 /* Show .invisible-p when screen width is 350px or below */
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 284px) {
     header, main, footer p.footer-p {
         display: none;
     }
