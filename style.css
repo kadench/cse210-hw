@@ -179,7 +179,7 @@ p.footer-p {
 }
 
 /* Show .invisible-p when screen width is 350px or below */
-@media screen and (max-width: 284px) {
+@media screen and (max-width: 326px) {
     header, main, footer p.footer-p {
         display: none;
     }
