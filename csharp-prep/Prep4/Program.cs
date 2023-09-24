@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 
 class Kh_program
 {
@@ -21,7 +20,7 @@ class Kh_program
         // Ask for an float until the user types "0".
         do {
             // Asking the user for an float.
-            Console.Write("Enter an float: ");
+            Console.Write("Enter an number (0 to quit): ");
 
             // Changing the user input into an float.
             kh_number_to_average = int.Parse(Console.ReadLine());
