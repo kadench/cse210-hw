@@ -1,7 +1,6 @@
 using System;
-using System.Runtime.InteropServices;
 
-class Program
+class Kh_program
 {
     static void Main(string[] args)
     {
