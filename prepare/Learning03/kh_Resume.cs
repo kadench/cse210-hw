@@ -6,7 +6,7 @@ public class Kh_resume
 
     public void KhDisplayResume()
     {
-        Console.WriteLine($"Name: {_khName}:");
+        Console.WriteLine($"Name: {_khName}");
         Console.WriteLine("Jobs:");
         foreach (Kh_job job in _khJobs)
         {

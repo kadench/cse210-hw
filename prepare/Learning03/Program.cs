@@ -10,7 +10,7 @@ class Kh_program
         kh_job1._kh_company = "Apple";
         kh_job1._kh_startYear = 2011;
         kh_job1._kh_endYear = 2019;
-        kh_job1.KhDisplayJobDetails();
+        // kh_job1.KhDisplayJobDetails();
 
         // Second instance of job class
         Kh_job kh_job2 = new Kh_job();
@@ -18,8 +18,9 @@ class Kh_program
         kh_job2._kh_company = "Epic Games";
         kh_job2._kh_startYear = 1992;
         kh_job2._kh_endYear = 2023;
-        kh_job2.KhDisplayJobDetails();
-
+        // kh_job2.KhDisplayJobDetails(); // Toggle with ctrl + / if you want to see this functionallity.
+        
+        // Creating an instance for the resume class
         Kh_resume kh_resume1 = new Kh_resume();
         kh_resume1._khName = "John";
         kh_resume1._khJobs.Add(kh_job1);
