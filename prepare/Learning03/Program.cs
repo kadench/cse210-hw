@@ -1,36 +1,21 @@
 using System;
 
-class Kh_program
+class Program
 {
-    static void Main(string[] args)
+        static void Main(string[] args)
     {
-        // Making a the first instance of the job class
-        Kh_job kh_job1 = new Kh_job();
-        kh_job1._kh_jobTitle = "Software Engineer";
-        kh_job1._kh_company = "Apple";
-        kh_job1._kh_startYear = 2011;
-        kh_job1._kh_endYear = 2019;
-        // kh_job1.KhDisplayJobDetails();
+        Fraction kh_fraction1 = new Fraction();
+        Fraction kh_fraction2 = new Fraction(5);
+        Fraction kh_fraction3 = new Fraction(3, 4);
+        Fraction kh_fraction4 = new Fraction(1, 3);
 
-        // Second instance of job class
-        Kh_job kh_job2 = new Kh_job();
-        kh_job2._kh_jobTitle = "Game Developer";
-        kh_job2._kh_company = "Epic Games";
-        kh_job2._kh_startYear = 1992;
-        kh_job2._kh_endYear = 2023;
-        // kh_job2.KhDisplayJobDetails(); // Toggle with ctrl + / if you want to see this functionallity.
-        
-        // Creating an instance for the resume class
-        Kh_resume kh_resume1 = new Kh_resume();
-        kh_resume1._khName = "John";
-        kh_resume1._khJobs.Add(kh_job1);
-        kh_resume1._khJobs.Add(kh_job2);
-        kh_resume1.KhDisplayResume();
-        
-
-        
-
-
-
+        Console.WriteLine(kh_fraction1.khGetFractionString());
+        Console.WriteLine(kh_fraction1.khGetDecimalValue());
+        Console.WriteLine(kh_fraction2.khGetFractionString());
+        Console.WriteLine(kh_fraction2.khGetDecimalValue());
+        Console.WriteLine(kh_fraction3.khGetFractionString());
+        Console.WriteLine(kh_fraction3.khGetDecimalValue());
+        Console.WriteLine(kh_fraction4.khGetFractionString());
+        Console.WriteLine(kh_fraction4.khGetDecimalValue());
     }
 }
