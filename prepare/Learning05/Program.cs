@@ -14,10 +14,11 @@ class Program
         Console.WriteLine(khCircle1.KhGetColor());
         Console.WriteLine(khCircle1.KhGetArea());
 
-        List<Shape> khShapeList = new List<Shape>();
-        khShapeList.Add(new Square("Orange", 5));
-        khShapeList.Add(new Rectangle("Red", 3, 7));
-        khShapeList.Add(new Circle("Black", 6));
+        List<Shape> khShapeList = new List<Shape>{
+            new Square("Orange", 5),
+            new Rectangle("Red", 3, 7), 
+            new Circle("Black", 6)
+        };
 
         foreach (Shape khShape in khShapeList) {
             Console.WriteLine(khShape.KhGetColor());
